@@ -1,0 +1,3 @@
+__pycache__
+CATKIN_IGNORE_not
+crazyflie_gazebo/models/crazyflie/crazyflie.sdf

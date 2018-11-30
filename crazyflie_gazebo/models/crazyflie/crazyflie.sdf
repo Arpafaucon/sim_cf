@@ -38,7 +38,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>/home/franck/catkin_ws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie.dae</uri>
+            <uri>/home/arpad/dev/sp/rosws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -50,7 +50,6 @@
       </visual>
       <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
     </link>
     <link name='//imu_link'>
       <pose frame=''>0 0 0 0 -0 0</pose>
@@ -220,7 +219,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>/home/franck/catkin_ws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
+            <uri>/home/arpad/dev/sp/rosws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -232,7 +231,6 @@
       </visual>
       <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
     </link>
     <joint name='rotor_0_joint' type='revolute'>
       <child>rotor_0</child>
@@ -286,7 +284,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>/home/franck/catkin_ws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
+            <uri>/home/arpad/dev/sp/rosws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -298,7 +296,6 @@
       </visual>
       <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
     </link>
     <joint name='rotor_1_joint' type='revolute'>
       <child>rotor_1</child>
@@ -352,7 +349,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>/home/franck/catkin_ws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
+            <uri>/home/arpad/dev/sp/rosws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -364,7 +361,6 @@
       </visual>
       <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
     </link>
     <joint name='rotor_2_joint' type='revolute'>
       <child>rotor_2</child>
@@ -418,7 +414,7 @@
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>/home/franck/catkin_ws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
+            <uri>/home/arpad/dev/sp/rosws/src/sim_cf/crazyflie_gazebo/models/rotors_description/meshes/crazyflie_prop.dae</uri>
           </mesh>
         </geometry>
         <material>
@@ -430,7 +426,6 @@
       </visual>
       <gravity>1</gravity>
       <velocity_decay/>
-      <self_collide>0</self_collide>
     </link>
     <joint name='rotor_3_joint' type='revolute'>
       <child>rotor_3</child>
@@ -567,15 +562,15 @@
       <crazyflieURI>INADDR_ANY://19950</crazyflieURI>
       <rollTrim>0</rollTrim>
       <pitchTrim>0</pitchTrim>
-      <enableLogging>true</enableLogging>
-      <useRosTime>true</useRosTime>
-      <enableLoggingImu>true</enableLoggingImu>
-      <enableLoggingTemperature>false</enableLoggingTemperature>
-      <enableLoggingMagneticField>false</enableLoggingMagneticField>
-      <enableLoggingPressure>false</enableLoggingPressure>
-      <enableLoggingBattery>false</enableLoggingBattery>
-      <enableLoggingPackets>false</enableLoggingPackets>
-      <enableParameters>true</enableParameters>
+      <enableLogging>1</enableLogging>
+      <useRosTime>1</useRosTime>
+      <enableLoggingImu>1</enableLoggingImu>
+      <enableLoggingTemperature>0</enableLoggingTemperature>
+      <enableLoggingMagneticField>0</enableLoggingMagneticField>
+      <enableLoggingPressure>0</enableLoggingPressure>
+      <enableLoggingBattery>0</enableLoggingBattery>
+      <enableLoggingPackets>0</enableLoggingPackets>
+      <enableParameters>1</enableParameters>
       <rotorCount>4</rotorCount>
     </plugin>
     <static>0</static>

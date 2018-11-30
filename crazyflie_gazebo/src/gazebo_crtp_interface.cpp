@@ -5,7 +5,7 @@ namespace gazebo {
 GZ_REGISTER_MODEL_PLUGIN(GazeboCRTPInterface);
 
 GazeboCRTPInterface::~GazeboCRTPInterface(){
-	event::Events::DisconnectWorldUpdateBegin(updateConnection_);
+	// event::Events::DisconnectWorldUpdateBegin(updateConnection_);
 	delete cfROS_;
 }
 

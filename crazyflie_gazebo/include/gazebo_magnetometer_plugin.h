@@ -24,6 +24,8 @@
 #include <gazebo/gazebo.hh>
 #include <gazebo/physics/physics.hh>
 
+#include <ignition/math.hh>
+
 #include "MagneticField.pb.h"
 
 #include "common.h"
@@ -83,7 +85,7 @@ class GazeboMagnetometerPlugin : public ModelPlugin {
   //// \brief    Pointer to the update event connection.
   event::ConnectionPtr updateConnection_;
 
-  math::Vector3 mag_W_;
+  ignition::math::Vector3d mag_W_;
 
   /// \brief    magnetometer measurement rate
   double mag_delay_;
