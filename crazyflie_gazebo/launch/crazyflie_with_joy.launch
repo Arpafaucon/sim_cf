@@ -30,7 +30,7 @@
     </node>
 
     <!-- Teleop node for cf control -->
-    <node pkg="crazyflie_gazebo" name="cf_joy" type="joy_control_node" output="screen">
+    <node pkg="crazyflie_gazebo" name="cf_joy" type="joy_control_node" output="screen">syn
       <param name="only_command" value = "$(arg only_command)" />
       <param name="LB" value="4" />
       <param name="RB" value="5" />

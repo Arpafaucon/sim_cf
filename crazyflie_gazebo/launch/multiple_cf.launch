@@ -95,9 +95,9 @@
       <arg name="z" default="$(arg z_1)"/>
     </include>
   </group>
-  
+
   <group ns="cf2">
-      <include file="$(find crazyflie_gazebo)/launch/spawn_mav.launch">
+    <include file="$(find crazyflie_gazebo)/launch/spawn_mav.launch">
       <arg name="mav_name" value="$(arg mav_name)" />
       <arg name="model" value="$(find crazyflie_gazebo)/models/rotors_description/urdf/$(arg mav_name)_base.xacro" />
       <arg name="enable_wind" value="$(arg enable_wind)" />

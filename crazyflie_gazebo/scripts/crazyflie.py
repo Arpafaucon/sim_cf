@@ -15,18 +15,25 @@ class Crazyflie:
 
         rospy.wait_for_service(prefix + "/set_group_mask")
         self.setGroupMaskService = rospy.ServiceProxy(prefix + "/set_group_mask", SetGroupMask)
+
         rospy.wait_for_service(prefix + "/takeoff")
         self.takeoffService = rospy.ServiceProxy(prefix + "/takeoff", Takeoff)
+
         rospy.wait_for_service(prefix + "/land")
         self.landService = rospy.ServiceProxy(prefix + "/land", Land)
+
         rospy.wait_for_service(prefix + "/stop")
         self.stopService = rospy.ServiceProxy(prefix + "/stop", Stop)
+
         rospy.wait_for_service(prefix + "/go_to")
         self.goToService = rospy.ServiceProxy(prefix + "/go_to", GoTo)
+
         rospy.wait_for_service(prefix + "/upload_trajectory")
         self.uploadTrajectoryService = rospy.ServiceProxy(prefix + "/upload_trajectory", UploadTrajectory)
+
         rospy.wait_for_service(prefix + "/start_trajectory")
         self.startTrajectoryService = rospy.ServiceProxy(prefix + "/start_trajectory", StartTrajectory)
+
         rospy.wait_for_service(prefix + "/update_params")
         self.updateParamsService = rospy.ServiceProxy(prefix + "/update_params", UpdateParams)
 
